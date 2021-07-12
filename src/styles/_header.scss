@@ -1,0 +1,244 @@
+#myHeader {
+  height: 90px;
+  padding: 10px 16px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: rgba(0, 0, 0, .0%) 0px 1px 3px;
+  font-family: 'Open Sans', serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  @media (max-width: 992px) {
+    height: 70px;
+  }
+
+  & .container {
+
+    & .header-content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 70px;
+
+      &-logo {
+        width: 200px;
+
+        @media (max-width: 1200px) {
+          width: 150px;
+        }
+
+        @media (max-width: 430px) {
+          display: none;
+        }
+
+        #logo {
+          object-fit: contain;
+          width: 100%;
+        }
+      }
+
+      &-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+
+        & .nav-item {
+           & .nav-link {
+             font-size: 20px;
+             font-weight: 600;
+             color: #fff;
+
+             &:hover {
+               color: rgb(161, 161, 161);
+             }
+
+             &:active {
+               color: rgb(161, 161, 161);
+             }
+
+             @media (max-width: 1200px) {
+               font-size: 18px;
+             }
+
+             @media (max-width: 1008px) {
+               padding: 0.5rem 0.6rem;
+             }
+           }
+
+            &:active {
+              color: rgb(161, 161, 161);
+            }
+          }
+
+          @media (max-width: 992px) {
+            display: none;
+          }
+        }
+
+      & .hamburger-menu {
+        display: none;
+
+        #menu__toggle {
+          opacity: 0;
+        }
+
+        #menu__toggle:checked~.menu__btn>span {
+          transform: rotate(45deg);
+        }
+
+        #menu__toggle:checked~.menu__btn>span::before {
+          top: 0;
+          transform: rotate(0);
+        }
+
+        #menu__toggle:checked~.menu__btn>span::after {
+          top: 0;
+          transform: rotate(90deg);
+        }
+
+        #menu__toggle:checked~.menu__box {
+          visibility: visible;
+          left: 0;
+        }
+
+        .menu__btn {
+          display: flex;
+          align-items: center;
+          position: fixed;
+          top: 23px;
+          width: 26px;
+          height: 26px;
+          cursor: pointer;
+          z-index: 1;
+        }
+
+        .menu__btn>span,
+        .menu__btn>span::before,
+        .menu__btn>span::after {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: #fff;
+          transition-duration: .25s;
+        }
+
+        .menu__btn>span::before {
+          content: '';
+          top: -8px;
+        }
+
+        .menu__btn>span::after {
+          content: '';
+          top: 8px;
+        }
+
+        .menu__box {
+          display: block;
+          position: fixed;
+          visibility: hidden;
+          top: 0;
+          left: -100%;
+          width: 320px;
+          height: 100%;
+          margin: 0;
+          padding: 80px 0;
+          list-style: none;
+          background-color: rgba(0, 0, 0, .9);
+          box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+          transition-duration: .25s;
+        }
+
+        .menu__item {
+          display: block;
+          padding: 12px 24px;
+          color: #fff;
+          font-size: 20px;
+          font-weight: 600;
+          text-decoration: none;
+          transition-duration: .25s;
+        }
+
+        .menu__item:hover {
+          background-color: #CFD8DC;
+          color: #60ba00;
+        }
+
+        @media (max-width: 992px) {
+          display: block;
+        }
+      }
+
+      &-phone {
+        margin-left: 40px;
+        
+        @media (max-width: 1200px) {
+          margin-left: 0;
+        }
+
+        &-number {
+          display: inline-block;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 16px;
+          text-decoration: none;
+          color: #fff;
+          font-weight: 600;
+
+          @media (max-width: 991px) {
+            display: block;
+          }
+
+          @media (max-width: 767px) {
+            display: none;
+          }
+        }
+
+        & .phone-logo {
+          width: 20px;
+          height: 20px;
+        }
+
+        &:hover {
+
+          & .header-content-phone-number {
+            text-decoration: none;
+          }
+
+        }
+
+        &-number-mob {
+          display: none;
+
+          & .fa-phone-alt {
+            color: #fff;
+            font-size: 16px;
+          }
+
+          @media (max-width: 679px) {
+            display: block;
+          }
+        }
+      }
+
+      & .content-btn {
+        margin-left: 10px;
+
+        @media (max-width: 1200px) {
+          padding: 5px 2px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 357px) {
+    padding: 10px 0;
+  }
+}
+
+.fixed {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 1)!important;
+  z-index: 50;
+}

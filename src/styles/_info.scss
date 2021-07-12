@@ -1,0 +1,36 @@
+.info {
+  padding: 50px 0;
+  font-family: 'Open Sans', sans-serif;
+
+  & .info__item {
+    text-align: center;
+    border-right: 1px solid #c2c2c2;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    @media (max-width: 991px) {
+      border: none;
+    }
+
+    & .info__image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+    }
+
+    & .info__title {
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #00af00;
+    }
+
+    & .info__text {
+      font-size: 16px;
+    }
+
+  }
+}

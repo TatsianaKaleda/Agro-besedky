@@ -1,0 +1,22 @@
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
+
+@import "~swiper/swiper-bundle.css";
+
+@import "~normalize-scss/sass/normalize/";
+@import "~font-awesome/scss/font-awesome";
+@import "~font-awesome/css/font-awesome.min.css";
+
+@import "settings";
+@import "header.scss";
+@import "main.scss";
+@import "info.scss";
+@import "catalog.scss";
+@import "advantages.scss";
+@import "delivery.scss";
+@import "reviews.scss";
+@import "footer.scss";
+@import "modal-order.scss";
+@import "modal-thanks.scss";

@@ -1,0 +1,73 @@
+.advantages {
+  padding: 50px 0 0;
+  font-family: 'Open Sans', sans-serif;
+
+  & .title {
+    &:after {
+      top: -25px;
+      right: 34%;
+
+      @media (max-width: 1199px) {
+        right: 30%;
+      }
+
+      @media (max-width: 991px) {
+        right: 23%;
+      }
+
+      @media (max-width: 767px) {
+        right: 14%;
+      }
+
+      @media (max-width: 519px) {
+        right: 10%;
+      }
+
+      @media (max-width: 477px) {
+        right: 7%;
+      }
+
+      @media (max-width: 419px) {
+        right: 5%;
+      }
+
+      @media (max-width: 393px) {
+        right: -3%;
+      }
+
+      @media (max-width: 375px) {
+        right: 3%;
+        z-index: -1;
+      }
+
+      @media (max-width: 340px) {
+        right: 2%;
+        z-index: -1;
+      }
+    }
+
+    @media (max-width: 419px) {
+      font-size: 33px;
+    }
+  }
+
+  & .advantages__card {
+    margin-bottom: 2rem;
+
+    & .advantages__title{
+      color: #60ba00;
+      font-size: 25px;
+      font-weight: 600;
+      text-shadow: 1px 1px 2px black, 0 0 1em #60ba00;
+      text-align: center;
+    }
+
+    & .advantages__img {
+      padding: 1rem;
+    }
+
+    & .advantages__list li {
+      font-size: 16px;
+    }
+  }
+}

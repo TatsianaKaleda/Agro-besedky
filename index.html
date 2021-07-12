@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="./dist/bundle.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+</head>
+
+<body class="for-parallax">
+    <header id="myHeader">
+        <div class="container">
+            <div class="header-content">
+                <a class="header-content-logo" href="#main">
+                    <img src="./assets/img/Logo_w_TE_1.svg" alt="#" id="logo">
+                </a>
+
+                <ul class="header-content-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#catalog">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#advantages">Преимущества</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#delivery">Доставка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Отзывы</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+
+                    <ul class="menu__box">
+                        <li>
+                            <a class="menu__item" href="#catalog">Каталог</a>
+                        </li>
+                        <li>
+                            <a class="menu__item" href="#advantages">Преимущества</a>
+                        </li>
+                        <li>
+                            <a class="menu__item" href="#delivery">Доставка</a>
+                        </li>
+
+                        <li>
+                            <a class="menu__item" href="#reviews">Отзывы</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header-content-phone">
+
+                    <a class="header-content-phone-number" href="tel:+375331234567">
+                        <img class="phone-logo" src="./assets/img/icons/logo_A1_56.png">
+                        +375 (33) 123-45-67
+                    </a>
+                    <a class="header-content-phone-number" href="tel:+375331234567">
+                        <img class="phone-logo" src="./assets/img/icons/logo_mts_64.jpg">
+                        +375 (33) 123-45-67
+                    </a>
+
+                    <a class="header-content-phone-number-mob" href="tel:+375331234567" title="+375331234567">
+                        <i class="fa fa-phone-alt"></i>
+                    </a>
+                </div>
+
+                <button type="button" class="content-btn" data-bs-toggle="modal" data-bs-target="#modal-order">
+                    Обратный звонок
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="main" id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="main-title">
+                        Агроусадьба для вашего отдыха
+                    </h1>
+                    <h2 class="main-subtitle">
+                        1 Га пространства, большой дом, тераса, беседка, баня и многое другое для проведение вашего отдыха или праздника. Звоните
+                    </h2>
+
+                    <a class="main-phone" href="tel:+375331234567">
+                        +375 (29) 282-84-44
+                    </a>
+
+                    <div class="main-timer">
+                        <div class="main-timer-title">Горячее предложение</div>
+                        <div class="main-timer-percent">
+                            <p class="main-timer-percent-dig">30<span class="f-small">%</span></p>
+                            <p class="main-timer-percent-description">Скидка на все виды продукции!</p>
+                        </div>
+                        <div class="main-timer-text">
+                            <p>Успейте приобрести нашу продукцию со скидкой</p>
+                            <p>Время действия акции ограничено, осталось</p>
+                        </div>
+                        <div class="countdown-week"></div>
+                        <div class="main-timer-form">
+                            <div class="main-timer-form-title">Сделайте заказ сейчас</div>
+                            <div class="timer-form">
+                                <form action="mail.php" method="post">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" name="phone" class="form-control" placeholder="Ваш номер телефона" required>
+                                    </div>
+                                    <button class="content-btn" type="submit">
+                                        Забронировать
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 info__item">
+                    <div class="info__image">
+                        <img src="assets/img/info/1.png">
+                    </div>
+                    <div class="info__title">Красиво и практично</div>
+                    <div class="info__text">Оригинальные конструкции изделий, разработанные на основе многолетнего
+                        опыта
+                    </div>
+                </div>
+                <div class="col-lg-4 info__item">
+                    <div class="info__image">
+                        <img src="assets/img/info/2.png">
+                    </div>
+                    <div class="info__title">Высокое качество</div>
+                    <div class="info__text">При изготовлении конструкций применяются современные технологии и
+                        высококачественные строительные материалы
+                    </div>
+                </div>
+                <div class="col-lg-4 info__item">
+                    <div class="info__image">
+                        <img src="assets/img/info/3.png">
+                    </div>
+                    <div class="info__title">Оптимальные цены</div>
+                    <div class="info__text">Самые низкие цены для конструкций в данном сегменте рынка</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog" class="catalog">
+        <div class="parallax"></div>
+        <div class="container">
+            <h2 class="title">
+                Каталог
+            </h2>
+            <div class="row">
+                <div class="catalog-card mt-5">
+                    <form class="has-calculator">
+                        <input type="hidden" name="form" value="Астра 2">
+                        <input type="hidden" name="product" value="product1">
+                        <div class="row">
+                            <div class="col-12 order-1 col-lg-6 order-1">
+                                <div class="col-12 mb-3">
+                                    <div class="galery">
+                                        <div class="swiper-container gallery-top">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/img/catalog/PION_1.jpg" alt="pion">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/img/catalog/PION_2.jpg" alt="pion">
+                                                </div>     
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/img/catalog/PION_3.jpg" alt="pion">
+                                                </div>     
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/img/catalog/PION_4.jpg" alt="pion">
+                                                </div>
+                                            </div>
+                                            <!-- Add Arrows -->
+                                            <div class="swiper-button-next swiper-button-white"></div>
+                                            <div class="swiper-button-prev swiper-button-white"></div>
+                                        </div>
+                                        <div class="swiper-container gallery-thumbs">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/img/catalog/PION_1.jpg" alt="pion">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/img/catalog/PION_2.jpg" alt="pion">
+                                                </div>     
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/img/catalog/PION_3.jpg" alt="pion">
+                                                </div>     
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/img/catalog/PION_4.jpg" alt="pion">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <a href="assets/img/catalog/cveta-besedok.jpg" target="_blank" data-fancybox="gallery-sibirskaya">
+                                        <img src="assets/img/catalog/cveta-besedok.jpg" class="img-fluid img-thumbnail">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 order-2 col-lg-6">
+                                <div class="col-12">
+                                    <h3 class="catalog-card-title text-center">
+                                        Беседка - Астра 2
+                                    </h3>
+                                </div>
+                                <div class="col-12">
+                                    <ul class="catalog-card-list">
+                                        <li class="catalog-card-list-item">
+                                            <i class="fa fa-shield" aria-hidden="true"></i>
+                                            Сверхпрочный каркас из оцинкованной трубы
+                                        </li>
+                                        <li class="catalog-card-list-item">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            Поликарбонат высокого качества с 2-ым УФ-фильтром
+                                        </li>
+                                        <li class="catalog-card-list-item">
+                                            <i class="fa fa-thermometer-empty" aria-hidden="true"></i>
+                                            Оцинкованное покрытие методом горячего цинкования
+                                        </li>
+                                        <li class="catalog-card-list-item">
+                                            <i class="fa fa-users" aria-hidden="true"></i>
+                                            Вместительность до 16 человек
+                                        </li>
+                                        <li class="catalog-card-list-item">
+                                            <i class="fa fa-wrench" aria-hidden="true"></i>
+                                            Очень легкая и быстрая сборка
+                                        </li>
+                                        <li class="catalog-card-list-item">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            Большой срок эксплуатации-30 лет
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12">
+                                    <table class="table table-white table-sm">
+                                        <tbody>
+                                        <tr>
+                                            <td>Длинна</td>
+                                            <td>от 2 до 4 метров</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ширина по низу</td>
+                                            <td>1.73 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Высота</td>
+                                            <td>2.02 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Материал каркаса</td>
+                                            <td>Оцинкованная труба 40х20 и 20х20 мм</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 d-flex align-items-center">
+                                            <div class="catalog__card__length">
+                                                <div class="catalog__card__subtitle text-center mt-2">
+                                                    Выберите длинну
+                                                </div>
+                                                <label class="catalog__input">
+                                                    <input type="radio" name="length" value="2" checked="">
+                                                    <span class="catalog__input__label">2 м</span>
+                                                </label>
+                                                <label class="catalog__input">
+                                                    <input type="radio" name="length" value="3">
+                                                    <span class="catalog__input__label">3 м</span>
+                                                </label>
+                                                <label class="catalog__input">
+                                                    <input type="radio" name="length" value="4">
+                                                    <span class="catalog__input__label">4 м</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 d-flex align-items-center">
+                                            <div class="catalog__prices">
+                                                <span>Цена со скидкой:</span>
+                                                <div class="h3 text-danger font-weight-bold d-inline-block">
+                                                    <span class="calculator-price">430</span> руб.
+                                                </div>
+                                                <br>
+                                                <span>Старая цена:</span>
+                                                <div class="catalog__card__price--old d-inline-block">
+                                                    <s><span class="calculator-price-old">546</span> руб.</s>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-row align-items-center">
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="tel" name="phone" class="form-control" placeholder="Ваш номер телефона" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="content-btn mb-2">
+                                                Заказать беседку
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row block-icon">
+                                        <div class="col-sm-3 col-6">
+                                            <figure style="box-shadow: 0 0 15px rgba(0,0,0,.5); padding-bottom: 8px;">
+                                                <img class="img-fluid" src="assets/img/icons/444.jpg" alt="icon">
+                                                <figcaption class="text-center text-danger">Мангал в подарок</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-3 col-6">
+                                            <figure>
+                                                <img class="img-fluid" src="assets/img/icons/111.png" alt="icon">
+                                                <figcaption class="text-center">Бесплатная доставка</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-3 col-6">
+                                            <figure>
+                                                <img class="img-fluid" src="assets/img/icons/222.png" alt="icon">
+                                                <figcaption class="text-center">Москитная сетка за 100 р.</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-3 col-6">
+                                            <figure>
+                                                <img class="img-fluid" src="assets/img/icons/333.png" alt="icon">
+                                                <figcaption class="text-center">Документы, чек</figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="catalog-card mt-5">
+                    <form class="has-calculator">
+                        <input type="hidden" name="form" value="Астра 1">
+                        <input type="hidden" name="product" value="product2">
+                        <div class="row">
+                            <div class="col-12 order-1 col-lg-6 order-1">
+                                <div class="col-12 mb-3">
+                                    <div class="galery">
+                                        <div class="swiper-container gallery-top">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/img/catalog/ASTRA2_1.jpg" alt="astra">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/img/catalog/ASTRA2_2.jpg" alt="astra">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/img/catalog/ASTRA2_3.jpg" alt="astra">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/img/catalog/ASTRA_4.jpg" alt="astra">
+                                                </div>
+                                            </div>
+                                            <!-- Add Arrows -->
+                                            <div class="swiper-button-next swiper-button-white"></div>
+                                            <div class="swiper-button-prev swiper-button-white"></div>
+                                        </div>
+                                        <div class="swiper-container gallery-thumbs">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/img/catalog/ASTRA2_1.jpg" alt="astra">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/img/catalog/ASTRA2_2.jpg" alt="astra">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/img/catalog/ASTRA2_3.jpg" alt="astra">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="./assets/img/catalog/ASTRA_4.jpg" alt="astra">
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <a href="assets/img/catalog/cveta-besedok.jpg" target="_blank" data-fancybox="gallery-sibirskaya">
+                                        <img src="assets/img/catalog/cveta-besedok.jpg" class="img-fluid img-thumbnail">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 order-2 col-lg-6">
+                                <div class="col-12">
+                                    <h3 class="catalog-card-title text-center">
+                                        Беседка - Астра 1
+                                    </h3>
+                                </div>
+                                <div class="col-12">
+                                    <ul class="catalog-card-list">
+                                        <li class="catalog-card-list-item">
+                                            <i class="fa fa-shield" aria-hidden="true"></i>
+                                            Сверхпрочный каркас из оцинкованной трубы
+                                        </li>
+                                        <li class="catalog-card-list-item">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            Поликарбонат высокого качества с 2-ым УФ-фильтром
+                                        </li>
+                                        <li class="catalog-card-list-item">
+                                            <i class="fa fa-thermometer-empty" aria-hidden="true"></i>
+                                            Оцинкованное покрытие методом горячего цинкования
+                                        </li>
+                                        <li class="catalog-card-list-item">
+                                            <i class="fa fa-users" aria-hidden="true"></i>
+                                            Вместительность до 16 человек
+                                        </li>
+                                        <li class="catalog-card-list-item">
+                                            <i class="fa fa-wrench" aria-hidden="true"></i>
+                                            Очень легкая и быстрая сборка
+                                        </li>
+                                        <li class="catalog-card-list-item">
+                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                            Большой срок эксплуатации-30 лет
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12">
+                                    <table class="table table-white table-sm">
+                                        <tbody>
+                                        <tr>
+                                            <td>Длинна</td>
+                                            <td>от 2 до 4 метров</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ширина по низу</td>
+                                            <td>1.73 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Высота</td>
+                                            <td>2.02 метра</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Материал каркаса</td>
+                                            <td>Оцинкованная труба 40х20 и 20х20 мм</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 d-flex align-items-center">
+                                            <div class="catalog__card__length">
+                                                <div class="catalog__card__subtitle text-center mt-2">
+                                                    Выберите длинну
+                                                </div>
+                                                <label class="catalog__input">
+                                                    <input type="radio" name="length" value="2" checked="">
+                                                    <span class="catalog__input__label">2 м</span>
+                                                </label>
+                                                <label class="catalog__input">
+                                                    <input type="radio" name="length" value="3">
+                                                    <span class="catalog__input__label">3 м</span>
+                                                </label>
+                                                <label class="catalog__input">
+                                                    <input type="radio" name="length" value="4">
+                                                    <span class="catalog__input__label">4 м</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 d-flex align-items-center">
+                                            <div class="catalog__prices">
+                                                <span>Цена со скидкой:</span>
+                                                <div class="h3 text-danger font-weight-bold d-inline-block">
+                                                    <span class="calculator-price">430</span> руб.
+                                                </div>
+                                                <br>
+                                                <span>Старая цена:</span>
+                                                <div class="catalog__card__price--old d-inline-block">
+                                                    <s><span class="calculator-price-old">546</span> руб.</s>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-row align-items-center">
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="tel" name="phone" class="form-control" placeholder="Ваш номер телефона" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="content-btn mb-2">
+                                                Заказать беседку
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row block-icon">
+                                        <div class="col-sm-3 col-6">
+                                            <figure style="box-shadow: 0 0 15px rgba(0,0,0,.5); padding-bottom: 8px;">
+                                                <img class="img-fluid" src="assets/img/icons/444.jpg" alt="icon">
+                                                <figcaption class="text-center text-danger">Мангал в подарок</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-3 col-6">
+                                            <figure>
+                                                <img class="img-fluid" src="assets/img/icons/111.png" alt="icon">
+                                                <figcaption class="text-center">Бесплатная доставка</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-3 col-6">
+                                            <figure>
+                                                <img class="img-fluid" src="assets/img/icons/222.png" alt="icon">
+                                                <figcaption class="text-center">Москитная сетка за 100 р.</figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-3 col-6">
+                                            <figure>
+                                                <img class="img-fluid" src="assets/img/icons/333.png" alt="icon">
+                                                <figcaption class="text-center">Документы, чек</figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="section-footer-video">
+            <div class="container">
+                <h2 class="section-footer-video-title">
+                    Видео обзор беседки из поликарбоната
+                </h2>
+
+                <div class="col-12 d-flex justify-content-around align-items-center mt-5">
+                    <iframe width="516" height="315" src="https://www.youtube.com/embed/k0Q4ND921os" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="advantages" class="advantages">
+        <div class="container">
+            <h2 class="title">Преимущества</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="advantages__card">
+                        <div class="advantages__title">Эконом</div>
+                        <div class="advantages__img">
+                            <img src="assets/img/advantages/sravnenie1.jpg" class="img-fluid img-thumbnail">
+                        </div>
+                        <ul class="fa-ul advantages__list">
+                            <li><i class="fa fa-plus text-success" aria-hidden="true"></i> Относительно дешёвая стоимость</li>
+                            <li><i class="fa fa-minus text-danger" aria-hidden="true"></i> Маленький срок службы</li>
+                            <li><i class="fa fa-minus text-danger" aria-hidden="true"></i> Требуется подготовленная площадка</li>
+                            <li><i class="fa fa-minus text-danger" aria-hidden="true"></i> Нельзя перенести</li>
+                            <li><i class="fa fa-minus text-danger" aria-hidden="true"></i> Нужно подготавлевать на зиму</li>
+                            <li><i class="fa fa-minus text-danger" aria-hidden="true"></i> Сложная конструкция</li>
+                            <li><i class="fa fa-minus text-danger" aria-hidden="true"></i> Деревянный каркас</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="advantages__card">
+                        <div class="advantages__title">Стандарт</div>
+                        <div class="advantages__img">
+                            <img src="assets/img/advantages/sravnenie2.jpg" class="img-fluid img-thumbnail">
+                        </div>
+                        <ul class="fa-ul advantages__list">
+                            <li><i class="fa fa-plus text-success" aria-hidden="true"></i> Усиленный поликарбонат</li>
+                            <li><i class="fa fa-plus text-success" aria-hidden="true"></i> Оцинкованный каркас</li>
+                            <li><i class="fa fa-plus text-success" aria-hidden="true"></i> Лёгкая и быстрая сборка</li>
+                            <li><i class="fa fa-plus text-success" aria-hidden="true"></i> Установка на любой поверхности</li>
+                            <li><i class="fa fa-plus text-success" aria-hidden="true"></i> Низкая цена от 220 рублей</li>
+                            <li><i class="fa fa-plus text-success" aria-hidden="true"></i> Большой срок эксплуатации</li>
+                            <li><i class="fa fa-plus text-success" aria-hidden="true"></i> Выдерживает большие нагрузки</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="advantages__card">
+                        <div class="advantages__title">Премиум</div>
+                        <div class="advantages__img">
+                            <img src="assets/img/advantages/sravnenie3.jpg" class="img-fluid img-thumbnail">
+                        </div>
+                        <ul class="fa-ul advantages__list">
+                            <li><i class="fa fa-plus text-success" aria-hidden="true"></i> Красивый внешний вид</li>
+                            <li><i class="fa fa-plus text-success" aria-hidden="true"></i> Большой срок эксплуатации</li>
+                            <li><i class="fa fa-minus text-danger" aria-hidden="true"></i> Высокая стоимость</li>
+                            <li><i class="fa fa-minus text-danger" aria-hidden="true"></i> Требуется подготовленная площадка</li>
+                            <li><i class="fa fa-minus text-danger" aria-hidden="true"></i> Нужно подготавлевать на зиму</li>
+                            <li><i class="fa fa-minus text-danger" aria-hidden="true"></i> Не переносная конструкция</li>
+                            <li><i class="fa fa-minus text-danger" aria-hidden="true"></i> Сложная конструкция</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-footer">
+            <div class="container">
+                <p class="section-footer-sale">
+                    10% скидка
+                </p>
+                <p class="section-footer-subsale">
+                    при аренде дома в будние не праздничные дни*
+                </p>
+                <form class="section-footer-form">
+                    <div class="form-group">
+                        <button type="submit" class="content-btn">
+                            Забронировать
+                        </button>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" name="phone" class="form-control" placeholder="Ваш номер телефона" required>
+                    </div>
+                </form>
+
+                <p class="section-footer-ps">
+                    *Акция действует с понедельника по четверг
+                </p>
+
+                <div class="picture">
+                    <img src="assets/img/icons/summertime.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="delivery" class="delivery">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-6 col-lg-6 col-12">
+                    <div class="section_title font-weight-bold text-left mb-4"><span class="text_green">ЗАКАЗЫВАЯ У НАС ВЫ ПОЛУЧАЕТЕ:</span><br>Бесплатную доставку по всей Беларуси</div>
+                    <ul class="install-one-day__items mt-5">
+                        <li class="mt-4"><i class="text_green fa fa-check-square" aria-hidden="true"></i><span class="h5 ml-3">Бесплатную погрузку и разгрузку теплицы из поликарбоната на вашем участке</span></li>
+                        <li class="mt-4"><i class="text_green fa fa-check-square" aria-hidden="true"></i><span class="h5 ml-3">Окончательная оплата производится после получения и проверки вами качества товара</span></li>
+                        <li class="mt-4"><i class="text_green fa fa-check-square" aria-hidden="true"></i><span class="h5 ml-3">Доставку заказа в течении 1-3 дней с момента оформления заказа</span></li>
+                        <li class="mt-4"><i class="text_green fa fa-check-square" aria-hidden="true"></i><span class="h5 ml-3">Добрых и отзывчивых курьеров</span></li>
+                    </ul>
+                    <div class="col-12 bg_custom">
+                        <form class="p-4 text-left in__hiver">
+                            <div class="row">
+                                <input type="hidden" name="form" value="Форма заказа звонка">
+                                <div class="form-group col-12">
+                                    <label for="address">Введите имя<span class="text-danger">*</span> </label>
+                                    <input id="address" type="text" name="name" class="form-control" placeholder="Имя" required>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="phone">Введите телефон<span class="text-danger">*</span> </label>
+                                    <input id="phone" type="tel" name="phone" class="form-control" placeholder="Телефон" required>
+                                </div>
+                                <div class="btn-custom col-12">
+                                    <button type="submit" class="content-btn">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="title">
+                Отзывы
+            </h2>
+
+            <div class="reviews-content">
+                <div class="slide">
+                    <p class="reviews-text">
+                        Лучшее место из всех где бывал. Все простое и красивое. Гостевой дом сохранил в себе белорусские традиции. Летом планируем снова к вам приехать. Спасибо большое за прекрасный отдых.
+                    </p>
+                    <p class="reviews-author">
+                        Сергей Тарасов
+                    </p>
+                </div>
+                <div class="slide">
+                    <p class="reviews-text">
+                        Родны кут – это усадьба, которую я всем советую посетить. Огромная территория с разнообразными зонами отдыха, много места для детишек. Приятные и добродушные хозяева. Основной дом обустроен в белорусском стиле. Мы были в восторге от бани и банного чана на травах, раньше такого не встречали. Обязательно приедем сюда снова.
+                    </p>
+                    <p class="reviews-author">
+                        Антон Боровиков
+                    </p>
+
+                </div>
+
+                <div class="slide">
+                    <p class="reviews-text">
+                        Мы приезжали сюда на майские праздники в 2018 году. С первых минут мы окунулись в домашнюю атмосферу. Главный дом чистый и ухоженный. Очень тепло принял нас хозяин, накормил, напоил. Все выходные была прекрасная погода и мы провели время на улице. Здесь очень большая территория, свой пруд, много качелей и игр. Нам с детьми не хотелось отсюда уезжать.
+                    </p>
+                    <p class="reviews-author">
+                        Владко Прогресов
+                    </p>
+                </div>
+
+                <div class="slide">
+                    <p class="reviews-text">
+                        Я заказала установку рекуператора в загородный дом. Пока его работой все очень довольны. Главное
+                        изменение – теперь дома все время свежий и при этом не холодный воздух.......может летом это не
+                        так актуально, а вот зимой очень!
+                    </p>
+                    <p class="reviews-author">
+                        Елизавета Бару
+                    </p>
+                </div>
+
+                <div class="slide">
+                    <p class="reviews-text">
+                        Здравствуйте! Хочу поблагодарить хозяев усадьбы "Родны кут" за гостеприимство, уютную обстановку, за порядок и чистоту, за сохранение традиций! Праздновали у вас годовщину компании, остались очень довольны, чувствовали себя как дома!!! Обязательно вернемся в это чудесное загородное местечко.
+                    </p>
+                    <p class="reviews-author">
+                        Надя Миронова
+                    </p>
+                </div>
+
+                <div class="slide">
+                    <p class="reviews-text">
+                        Отдыхали небольшой компанией. Место очень понравилось. Просторно. Уютно. Ухожено. Комфортно. Есть всё, что душе угодно. Просто замечательно!!! Приезжайте, не пожалеете!
+                    </p>
+                    <p class="reviews-author">
+                        Марта Кононова
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <form class="footer-form">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" class="form-control" placeholder="Ваш номер телефона" required>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" rows="4" placeholder="Ваше сообщение"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="content-btn">
+                            Отправить
+                        </button>
+                    </div>
+                </form>
+
+                <div class="footer-info">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#catalog">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#advantages">Преимущества</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#delivery">Доставка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Отзывы</a>
+                        </li>
+                    </ul>
+
+                    <a class="footer-logo" href="#main">
+                        <img src="./assets/img/Logo_w_TE_1.svg" alt="#">
+                    </a>
+
+                    <p class="copyright">
+                        ©rodny-kut.by
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <div class="modal fade" id="modal-order">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="display: none;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="h2 modal-title">
+                        Оставьте ваш номер телефона
+                        <span class="modal-subtitle">
+                            И наш консультант с Вами свяжется
+                        </span>
+                    </p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Введите Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Ведите Ваш номер телефона"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit"
+                                class="btn btn-warning btn-lg btn-block app-ff&#45;&#45;alt modal-order-btn">Отправить
+                                заявку
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-thanks">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="display: none;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p class="h2 modal-title">
+                        Ваша заявка успешно отправлена. В ближайшее время с Вами свяжется менеджер.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./dist/bundle.js"></script>    
+    <script src="./assets/data/data.js"></script>
+    <script src="../vendor/js/app.js"></script>
+
+    
+</body>
+
+</html>

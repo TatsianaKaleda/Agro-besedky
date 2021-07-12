@@ -1,0 +1,79 @@
+.delivery {
+  font-size: 16px;
+  background-image: url("../assets/img/delivery/bg-6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: 991px) {
+    background-image: none;
+  }
+
+  & .section_title {
+    margin-top: 50px;
+    font-size: 38px;
+    font-weight: 800;
+
+    @media (max-width: 768px) {
+      font-size: 26px;
+      font-weight: 800;
+    }
+  }
+
+  & .text_green {
+    color: #60ba00;
+    font-size: 30px;
+  }
+
+  & .install-one-day__items {
+    padding-left: 0;
+  }
+
+  & .install-one-day__items li {
+    display: flex;
+    align-items: center;
+    & i {
+      margin-right: 10px;
+      color: #60ba00;
+    }
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  .bg_custom {
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    border-radius: 3px;
+    box-shadow: 0px 30px 32px 0px rgba(0, 0, 0, 0.16);
+    position: relative;
+    z-index: 0;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      bottom: 2px;
+      right: 2px;
+      border: 1px solid rgba(0, 0, 0, .1);
+      border-radius: 3px;
+      z-index: -1;
+    }
+
+    & .form-group {
+      margin-bottom: 15px;
+
+      & .form-control {
+        font-size: 16px;
+        border-radius: 10px;
+      }
+    }
+
+    & .content-btn {
+      width: 100%;
+    }
+  }
+}
